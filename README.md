@@ -1,6 +1,6 @@
 # mojimoji
 
-hello, my name is moji moji moji.
+hello, my name is moji moji.
 
 I have a pen!
 
