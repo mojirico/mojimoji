@@ -1,12 +1,3 @@
-<?php
-session_start();
-
-if(!isset($_SESSION["user_name"])) {
-	$no_login_url = "index.php";
-	header("Location: {$no_login_url}");
-	exit;
-}
-?>
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
   <?php require 'header.php'; ?>
@@ -22,13 +13,13 @@ if(!isset($_SESSION["user_name"])) {
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="images/blueberry.jpeg" style="height: 370px" class="d-block w-100" alt="...">
+          <img src="images/blueberry.jpeg" class="top-main-img" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="images/passion.jpeg" style="height: 370px" class="d-block w-100" alt="...">
+          <img src="images/passion.jpeg" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="images/coffee.jpeg" style="height: 370px" class="d-block w-100" alt="...">
+          <img src="images/coffee.jpeg" alt="...">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
