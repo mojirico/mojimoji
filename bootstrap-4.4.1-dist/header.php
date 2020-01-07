@@ -1,36 +1,45 @@
-<container-fluid>
-  <header id="g-header">
-    <div id="header-pc" class="d-none d-md-block">
-      <div class="header-main header-inner">
-        <div class="header-main--inner row justify-content-end align-items-center">
-          <p class="header-logo col-auto order-0 clone-item" data-clone-name="header-logo">
-          <a href="#"></a>
-          </p>
-          <div class="header-content-nav col-auto order-1">
-            <ul class="header-content-nav--lv-1 row no-gutters flex-nowrap align-items-center">
-              <li> <a href="#">NEW</a></li>
-              <li>RANKING</li>
-              <li>CATEGORY</li>
-              <li>SEARCH</li>
-            </ul>
-          </div>
-          <div class="header-shopping-nav col-auto order-2">
-            <ul class="header-shopping-nav--lv-1 row no-gutters flex-nowrap align-items-center">
-              <li> <a href="#"></a> ログイン</li>
-              <li>会員登録</li>
-              <li>お気に入り</li>
-              <li>カート</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <div id="header-sp" class="d-block d-md-none">
-    </div>
-    <div id="header-sp-drawer--overlay">
-    </div>
-    <div id="header-sp-drawer">
-    </div>
-  </header>
-</container-fluid>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="<?php echo 'index.php'; ?>">mojimoji</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="<?php echo 'signin.php'; ?>">ログイン <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo 'products.php'; ?>">商品一覧</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="<?php  ?>">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
